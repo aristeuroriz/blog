@@ -1,0 +1,33 @@
+# Site settings
+title: "aristeu roriz"
+email: aristeuroriz@gmail.com
+description: "Desenvolvimento Web & IoT - Internet of Things"
+baseurl: "/"
+url: "https://aristeuroriz.github.io"
+title_description: "Olá pessoal! Uso este blog para relatar um pouco das minhas experiências em desenvolvimento web e prototipação de sistemas de automação em geral. Sou fã de Ruby on Rails, Arduíno, Raspbarry Pi e coisas do tipo. Enjoy! :-)"
+title_image: "https://s.gravatar.com/avatar/cbe2920bd641d686f81393eabc3a85aa?s=300"
+google_analytics: ""
+disqus_account: aristeuroriz
+github_repository: https://github.com/aristeuroriz/blog.git
+addthis_id: ra-513c6fa83da6ec67
+post_limit: 5
+timezone: America/Sao_Paulo
+encoding: utf-8
+
+# Social usernames/URLs
+twitter_username: Aristeu_Roriz
+github_username:  aristeuroriz
+linkedin_link: https://br.linkedin.com/in/aristeuroriz
+google_plus_link: https://plus.google.com/110915414607247343567/
+stackoverflow_link: http://pt.stackoverflow.com/users/25272/aristeu-roriz
+
+# Footer
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/Aristeu_Roriz\">Aristeu Roriz</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/aristeuroriz\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+permalink: pretty
+exclude: [vendor]
