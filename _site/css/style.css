@@ -11,7 +11,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background-color: #2D2D29;
+  background-color: #FFFFFF;
   color: #FFFFFF;
   font-size: 16px;
   height: 100%;
@@ -47,6 +47,7 @@ ul {
   clear: both; }
 
 .header {
+  color: #2D2D29;
   font-size: 32px;
   text-align: center;
   margin-top: 20px;
@@ -58,8 +59,11 @@ ul {
       margin-left: -10%;
       width: 120%; } }
 
+.darked {
+  color: #2D2D29; }
+
 .menu-button {
-  color: #FFFFFF;
+  color: #2D2D29;
   font-size: 24px;
   position: fixed;
   top: 10px;
@@ -67,7 +71,7 @@ ul {
   cursor: pointer;
   line-height: 1em;
   padding: 10px;
-  background-color: #2D2D29;
+  background-color: #FFFFFF;
   z-index: 100; }
   @media (min-width: 768px) {
     .menu-button {
@@ -231,7 +235,7 @@ ul {
     padding: 6px 15px 6px 30px;
     margin: 2px;
     margin-top: 50px;
-    color: #2D2D29;
+    color: #FFFFFF;
     background-color: #FFFFFF;
     border: 1px solid #adc5cf;
     border-radius: 15px;
@@ -300,6 +304,7 @@ ul {
         width: 50%;
         margin-left: 25%; } }
     .single .article .thumb {
+      color: #2D2D29;
       margin-top: 20px;
       margin-bottom: 0px;
       text-align: center; }
@@ -313,6 +318,7 @@ ul {
       text-align: center;
       margin-bottom: 0px; }
     .single .article .read-time {
+      color: #2D2D29;
       font-size: 16px;
       text-align: center;
       margin-bottom: 10px;

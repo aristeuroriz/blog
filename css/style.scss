@@ -42,8 +42,8 @@ html {
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	background-color: $dark;
-	color: $white;
+	background-color: $white;
+	color: $white; // Define cor do texto em todas as partes
 	font-size: 16px;
 	height: 100%;
 	width: 100%
@@ -93,6 +93,7 @@ ul {
 }
 
 .header {
+	color: $dark;
 	font-size: 32px;
 	text-align: center;
 	margin-top: 20px;
@@ -106,8 +107,12 @@ ul {
 	}
 }
 
+.darked{
+	color: $dark;
+}
+
 .menu-button {
-	color: $white;
+	color: $dark;
 	font-size: 24px;
 	position: fixed;
 	top: 10px;
@@ -115,7 +120,7 @@ ul {
 	cursor: pointer;
 	line-height: 1em;
 	padding: 10px;
-	background-color: $dark;
+	background-color: $white;
 	z-index: 100;
 	@media (min-width: $screen-sm-min) {
 		top: 20px;
@@ -215,6 +220,7 @@ ul {
 	}
 
 	.header {
+
 		margin-top: 10px;
 		margin-left: 0%;
 		margin-bottom: 0px;
@@ -376,7 +382,7 @@ ul {
 		margin: 2px;
 		margin-top: 50px;
 
-		color:$dark;
+		color:$white;
 		background-color:$white;
 
 		border:1px solid #adc5cf;
@@ -489,6 +495,7 @@ ul {
 		}
 
 		.thumb {
+			color: $dark;
 			margin-top: 20px;
 			margin-bottom: 0px;
 			text-align: center;
@@ -508,6 +515,7 @@ ul {
 		}
 
 		.read-time {
+			color: $dark;
 			font-size: 16px;
 			text-align: center;
 			margin-bottom: 10px;
