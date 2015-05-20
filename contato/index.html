@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="container-fluid index">
+	<div class="row index all-posts">
+
+		<h1 class="header author-header">{{ site.author_name }}</h1>
+		<h2 class="header" itemprop="headline">Contato</h2>
+		<br>
+
+		<div class="col-md-12 content-panel articles" >
+
+			<form id="contact" action="https://getsimpleform.com/messages?form_api_token=8b9aa6e3148a68232872dab07a6e9ede" method="post" onSubmit="alert('Obrigado pelo contato! Responderei em breve. :-)');">
+
+				<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+				<input type='hidden' name='redirect_to' value='http://aristeuroriz.github.io'/>
+
+				<!-- all your input fields here.... -->
+				<label class="pull-left" for="InputName">Nome</label>
+				<input type="text" required="required" class="form-control" name="name" id="name" placeholder="Seu nome...">
+				<br>
+				<label class="pull-left" for="InputEmail">Email</label>
+				<input type="email" required="required" class="form-control" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Seu nome.."/>
+				<br>
+				<label class="pull-left" for="InputSubject">Assunto</label>
+				<input type="text" class="form-control" id="subject" name="subject" placeholder="Qual o motivo do contato?">
+				<br>
+				<label class="pull-left" for="message">Mensagem</label>
+				<textarea type="text" required="required" class="form-control" rows="4" id="message" name="message" placeholder="Escreva aqui sua mensagem..."></textarea>
+				<br>
+				<button type="submit"  class="btn btn-lg btn-success pull-right">Enviar</button>
+				<br>
+				<br>
+			</form>	
+		</div>
+	</div>
+</div>
