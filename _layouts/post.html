@@ -3,10 +3,10 @@ layout: default
 ---
 
 {% if page.minutes %}
-  {% assign minutes = page.minutes %}
+{% assign minutes = page.minutes %}
 {% else %}
-  {% assign minutes = content | number_of_words | divided_by: 180 %}
-  {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
+{% assign minutes = content | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
 {% endif %}
 
 <div class="container-fluid single">
@@ -32,15 +32,15 @@ layout: default
           by
           <span itemprop="author">
             {% if site.google_plus_link %}
-              <a rel="author" href="{{ site.google_plus_link }}">
-            {% endif %}
-            {% if page.author %}
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">{{ page.author }}</span>
-            </span>
-            {% endif %}
-            {% if site.google_plus_link %}
-              </a>
+            <a rel="author" href="{{ site.google_plus_link }}">
+              {% endif %}
+              {% if page.author %}
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">{{ page.author }}</span>
+              </span>
+              {% endif %}
+              {% if site.google_plus_link %}
+            </a>
             {% endif %}
           </span>
           on <span class="darked" itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span>
@@ -60,13 +60,15 @@ layout: default
         {% if site.addthis_id %}
         <div class="share">
           <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f07678f30c7ed96" async="async"></script>
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
           <div class="addthis_sharing_toolbox"></div>
         </div>
         {% endif %}
 
         <div class="tags"><small>
           <i class="fa fa-tags"></i>
-            {{ page.tags | join: ', ' }}
+          {{ page.tags | join: ', ' }}
         </small></div>
 
       </div>
@@ -90,13 +92,13 @@ layout: default
         <div class="related-header">
           <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
         </div>
-          <div class="title">
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          </div>
-          <div class="excerpt">
-            {{ post.excerpt | strip_html | truncatewords:30 }}
-            <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a>
-          </div>
+        <div class="title">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="excerpt">
+          {{ post.excerpt | strip_html | truncatewords:30 }}
+          <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a>
+        </div>
         {% endfor %}
         <hr />
         <div class="previous previous-next">
@@ -125,8 +127,8 @@ layout: default
 
 {% if site.disqus_account %}
 <script type="text/javascript">
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-function disqus_config() { this.experiment.enable_scroll_container = true; }
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  function disqus_config() { this.experiment.enable_scroll_container = true; }
 var disqus_shortname = "{{ site.disqus_account }}"; // required: replace example with your forum shortname
 /* * * DON'T EDIT BELOW THIS LINE * * */
 (function() {
