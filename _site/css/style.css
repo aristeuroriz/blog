@@ -94,8 +94,11 @@ ul {
   color: #FFFFFF; }
 #my-menu a:hover {
   color: #3CA2A2; }
-#my-menu .pages .fa {
-  margin-right: 10px; }
+#my-menu .pages {
+  font-size: 100%;
+  list-style-position: absolute; }
+  #my-menu .pages .fa {
+    margin-right: 10px; }
 
 .links {
   margin-top: 50px;
