@@ -5,69 +5,49 @@
     <description>Desenvolvimento Web &amp; IoT - Internet of Things</description>
     <link>http://aristeuroriz.github.io/</link>
     <atom:link href="http://aristeuroriz.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 26 May 2015 19:36:29 -0300</pubDate>
-    <lastBuildDate>Tue, 26 May 2015 19:36:29 -0300</lastBuildDate>
+    <pubDate>Thu, 28 May 2015 22:32:05 -0300</pubDate>
+    <lastBuildDate>Thu, 28 May 2015 22:32:05 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Teste de post</title>
-        <description>&lt;p&gt;Teste de post.&lt;/p&gt;
+        <title>Bem vindos ao meu Blog!</title>
+        <description>&lt;p align=&quot;center&quot;&gt; Bem vindos ao meu blog!&lt;/p&gt;
 
-&lt;p&gt;Carte Noire began as a new theme for &lt;a href=&quot;http://www.jacobtomlinson.co.uk/&quot;&gt;my personal blog&lt;/a&gt;, but has now taken
-on a life of its own as a free theme for Jekyll.&lt;/p&gt;
+&lt;p class=&quot;recuo&quot; align=&quot;justify&quot;&gt;
+Olá! Desenvolvi este blog para postar um pouco das minhas experiências. Aqui você encontra diversas informações úteis sobre tecnologia, além de alguns posts sobre alguns “hobbies” meus.
+&lt;/p&gt;
 
-&lt;p&gt;The theme has been designed with simplicity and readability in mind. It makes
-use of third party services such as Disqus ad AddThis to ensure the blog has
-all the features you would expect from a dynamic application such as Wordpress
-but with the hosting and maintenance simplicity of Jekyll.&lt;/p&gt;
+&lt;p class=&quot;recuo&quot; align=&quot;justify&quot;&gt;
+Para falar um pouco mais sobre mim, sou um aficionado em Ruby e seus frameworks (Rails, Jekyll, etc), pretendo estudar Python em breve e adoro projetos de automação em plataformas como arduino, raspberry pi, etc.
+&lt;/p&gt;
 
-&lt;p&gt;Please use/copy/share Carte Noire!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 23 May 2015 12:31:19 -0300</pubDate>
-        <link>http://aristeuroriz.github.io/jekyll/2015/05/23/teste-de-post/</link>
-        <guid isPermaLink="true">http://aristeuroriz.github.io/jekyll/2015/05/23/teste-de-post/</guid>
-        
-        <category>welcome</category>
-        
-        <category>to</category>
-        
-        <category>carte</category>
-        
-        <category>noire</category>
-        
-        
-        <category>jekyll</category>
-        
-      </item>
+&lt;p class=&quot;recuo&quot; align=&quot;justify&quot;&gt;
+Gosto muito de pedalar e vou postar algumas dessas experiências também. Vou tentar realizar alguns enduros na &quot;camelinha&quot; e compartilhar estes momentos aqui.
+&lt;/p&gt;
+
+&lt;p class=&quot;recuo&quot; align=&quot;justify&quot;&gt;
+Por fim, agradeço sua visita e postarei o mais rápido possível alguns tutoriais, dicas e informações que ajudem meus leitores com algumas perrengas que se encontram normalmente no início dos estudos.
+&lt;/p&gt;
     
-      <item>
-        <title>Welcome to Carte Noire</title>
-        <description>&lt;p&gt;Welcome to Carte Noire.&lt;/p&gt;
 
-&lt;p&gt;Carte Noire began as a new theme for &lt;a href=&quot;http://www.jacobtomlinson.co.uk/&quot;&gt;my personal blog&lt;/a&gt;, but has now taken
-on a life of its own as a free theme for Jekyll.&lt;/p&gt;
+&lt;p&gt;Valeu e abraços! :-)&lt;/p&gt;
 
-&lt;p&gt;The theme has been designed with simplicity and readability in mind. It makes
-use of third party services such as Disqus ad AddThis to ensure the blog has
-all the features you would expect from a dynamic application such as Wordpress
-but with the hosting and maintenance simplicity of Jekyll.&lt;/p&gt;
-
-&lt;p&gt;Please use/copy/share Carte Noire!&lt;/p&gt;
+&lt;p&gt;*** Ahhh... e não deixe de compartilhar!&lt;/p&gt;
 </description>
-        <pubDate>Mon, 23 Mar 2015 12:31:19 -0300</pubDate>
-        <link>http://aristeuroriz.github.io/jekyll/2015/03/23/welcome-to-carte-noir/</link>
-        <guid isPermaLink="true">http://aristeuroriz.github.io/jekyll/2015/03/23/welcome-to-carte-noir/</guid>
+        <pubDate>Thu, 28 May 2015 18:29:19 -0300</pubDate>
+        <link>http://aristeuroriz.github.io/outros/2015/05/28/bem-vindos/</link>
+        <guid isPermaLink="true">http://aristeuroriz.github.io/outros/2015/05/28/bem-vindos/</guid>
         
-        <category>welcome</category>
+        <category>bem</category>
         
-        <category>to</category>
+        <category>vindo</category>
         
-        <category>carte</category>
+        <category>aristeu</category>
         
-        <category>noire</category>
+        <category>roriz</category>
         
         
-        <category>jekyll</category>
+        <category>outros</category>
         
       </item>
     

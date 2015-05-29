@@ -29,7 +29,7 @@ layout: default
 
       <div class="author">
         <small class="darked"><i>
-          by
+          por
           <span itemprop="author">
             {% if site.google_plus_link %}
             <a rel="author" href="{{ site.google_plus_link }}">
@@ -43,14 +43,14 @@ layout: default
             </a>
             {% endif %}
           </span>
-          on <span class="darked" itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span>
-          under {% if page.categories %}{% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
+          em <span class="darked" itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%d/%m/%Y" }}</span>
+          | Categoria: {% if page.categories %}{% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
         </i></small>
       </div>
 
       <div class="read-time">
         <small>
-          {{ minutes }} minute read
+          Lido há {{ minutes }} min
         </small>
       </div>
 
@@ -90,14 +90,14 @@ layout: default
       <div class="content-panel related clearfix">
         {% for post in site.related_posts limit:1 %}
         <div class="related-header">
-          <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+          <a href="{{ site.baseurl }}{{ post.url }}">Ler mais</a>
         </div>
         <div class="title">
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </div>
         <div class="excerpt">
           {{ post.excerpt | strip_html | truncatewords:30 }}
-          <a href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a>
+          <a href="{{ site.baseurl }}{{ post.url }}">Continue Lendo</a>
         </div>
         {% endfor %}
         <hr />
@@ -106,7 +106,7 @@ layout: default
           <p>
             <a href="{{ site.baseurl }}{{ page.previous.url }}">{{ page.previous.title }}</a>
           </p>
-          <p class="date">Published {{ page.previous.date | date: "%B %-d, %Y" }}</p>
+          <p class="date">Publicado em {{ page.previous.date | date: "%B %-d, %Y" }}</p>
           {% endif %}
         </div>
         <div class="next previous-next">
@@ -114,7 +114,7 @@ layout: default
           <p>
             <a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}</a>
           </p>
-          <p class="date">Published {{ page.next.date | date: "%B %-d, %Y" }}</p>
+          <p class="date">Publicado em {{ page.next.date | date: "%B %-d, %Y" }}</p>
           {% endif %}
         </div>
       </div>

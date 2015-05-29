@@ -1,36 +1,13 @@
 [
   
   {
-    "title"    : "Welcome to Carte Noire",
+    "title"    : "Teste de post",
     "category" : "",
     "tags"     : "welcome, to, carte, noire",
     "url"      : "/jekyll/2015/03/23/welcome-to-carte-noir/",
     "date"     : "2015-03-23 12:31:19 -0300"
-    } ,
+    }
     
-  {
-    "title"    : "Carte Noire in Action",
-    "category" : "",
-    "tags"     : "demo, action, carte, noire",
-    "url"      : "/jekyll/2014/06/10/carte-noire-in-action/",
-    "date"     : "2014-06-10 09:31:19 -0300"
-    } ,
-    
-  {
-    "title"    : "So, What is Jekyll?",
-    "category" : "",
-    "tags"     : "about, jekyll",
-    "url"      : "/jekyll/2014/06/09/so-what-is-jekyll/",
-    "date"     : "2014-06-09 09:32:18 -0300"
-    } ,
-    
-  {
-    "title"    : "Using thumbnails",
-    "category" : "",
-    "tags"     : "thumbnails, carte noire",
-    "url"      : "/jekyll/2014/06/08/using-thumbnails/",
-    "date"     : "2014-06-08 09:32:18 -0300"
-    } 
     
   ]
 
