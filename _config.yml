@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://aristeuroriz.github.io"
 title_description: "Olá! Eu sou o Aristeu e este é meu blog. Sou profissional de TI e posto tutoriais e dicas de algumas tecnologias que eu mexo por aí. Curto muito Ruby e seus frameworks (Rails, Jekyll, etc). Sou fã de arduino, raspberry pi e outras plataformas de prototipagem. Então é isso... Enjoy! ;-)"
 title_image: "https://s.gravatar.com/avatar/cbe2920bd641d686f81393eabc3a85aa?s=300"
-google_analytics: ""
+google_analytics: "UA-63586932-1"
 disqus_account: aristeuroriz
 github_repository: https://github.com/aristeuroriz/aristeuroriz.github.io
 addthis_id: ra-4f07678f30c7ed96
