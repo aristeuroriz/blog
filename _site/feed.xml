@@ -5,9 +5,145 @@
     <description>Desenvolvimento Web &amp; IoT - Internet of Things</description>
     <link>http://aristeuroriz.github.io/</link>
     <atom:link href="http://aristeuroriz.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 30 May 2015 16:41:48 -0300</pubDate>
-    <lastBuildDate>Sat, 30 May 2015 16:41:48 -0300</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2015 17:56:09 -0300</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2015 17:56:09 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Instalar e configurar ambiente Ruby on Rails</title>
+        <description>&lt;p class=&quot;recuo&quot; align=&quot;justify&quot;&gt;
+    Vou ensinar neste post como instalar e configurar o ambiente de desenvolvimento Ruby on Rails no LINUX.
+    Eu instalei no meu computador rodando &lt;a href=&quot;https://elementary.io/&quot; target=&quot;_blank&quot;&gt;Elementary OS Freya&lt;/a&gt;, OS baseado no Ubuntu 14. Utilizo o &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM (Ruby Version Manager)&lt;/a&gt; que é um gerenciador para se ter várias versões do Ruby na mesma máquina. Vamos usar o &quot;Ruby 2.2.2&quot; e o &quot;Rails 4.2&quot;, que são as últimas versões estáveis na data deste post.
+&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;
+    Para começar, atualize a lista de pacotes do linux:
+    &lt;code&gt;
+        sudo apt-get update
+    &lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+    &lt;strong&gt;
+        Instalando o RVM (Ruby Version Manager) e o Ruby
+    &lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;
+    Instale a chave pública do RVM, conforme abaixo:
+    &lt;code&gt;
+        gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    &lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;
+    Para instalar o RVM, use este comando:
+    &lt;code&gt;
+        curl -L https://get.rvm.io | bash -s stable
+    &lt;/code&gt;
+    &lt;br&gt;
+
+    Se você não tiver o &quot;curl&quot; instalado, rode este comando para instalar:
+
+    &lt;code&gt;
+        sudo apt-get install curl
+    &lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;
+    
+    Com esses passos prontos, temos que adicionar o RVM ao shell. Para isso cole o código abaixo ao arquivo &lt;strong&gt;.bashrc&lt;/strong&gt; ou ao &lt;strong&gt;.bash_profile&lt;/strong&gt;:
+    &lt;code&gt;
+        PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting &lt;br&gt;
+        [[ -s &quot;/usr/local/rvm/scripts/rvm&quot; ]] &amp;amp;&amp;amp; source &quot;/usr/local/rvm/scripts/rvm&quot;&lt;br&gt;
+        [[ -s &quot;$HOME/.rvm/scripts/rvm&quot; ]] &amp;amp;&amp;amp; source &quot;$HOME/.rvm/scripts/rvm&quot;
+    &lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;
+    &lt;p class=&quot;text-warning&quot;&gt;
+        &lt;em&gt;
+            Obs.: Se algum comando com rvm não funcionar, você precisa acessar as preferências (Edit -&amp;gt; Profile Preferences) do terminal e marcar a opção para executar comandos com login.
+        &lt;/em&gt;
+    &lt;/p&gt;
+&lt;/small&gt;&lt;/p&gt;
+
+&lt;p align=&quot;justify&quot;&gt;
+
+    Para verificar quais as versões do Ruby estão disponíveis no RVM use:
+    &lt;code&gt;
+        rvm list known
+    &lt;/code&gt;
+    &lt;br&gt;
+    Mas antes de instalar o Ruby, instale algumas dependências necessárias:
+
+    &lt;code&gt;
+        sudo apt-get install build-essential openssl libreadline6&lt;br&gt; libreadline6-dev curl git-core zlib1g zlib1g-dev &lt;br&gt;libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev &lt;br&gt;libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison &lt;br&gt;subversion pkg-config
+    &lt;/code&gt;
+    &lt;br&gt;
+    Agora, rode este comando para instalar a versão 2.2.2 do Ruby:
+    &lt;code&gt;
+        rvm install 2.2.2
+    &lt;/code&gt;
+    &lt;br&gt;
+    Configure a versão instalada para ser a versão padrão:
+    &lt;code&gt;
+        rvm use 2.2.2 --default
+    &lt;/code&gt;
+    &lt;br&gt;
+    Pronto! Já podemos verificar a versão do Ruby instalada com este comando:
+    &lt;code&gt;
+        ruby -v
+    &lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+    &lt;strong&gt;
+        Instalando o Rails
+    &lt;/strong&gt;
+&lt;/p&gt;    
+
+&lt;p align=&quot;justify&quot;&gt;
+    
+    Vamos a instalação do Rails. Para isso rode o comando:
+
+    &lt;code&gt;
+        gem install rails
+    &lt;/code&gt;
+    &lt;br&gt;
+    Da mesma forma que o Ruby, após a instalação do Rails poderemos verificar a versão instalada:
+    &lt;code&gt;
+        rails -v
+    &lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;recuo&quot; align=&quot;justify&quot;&gt;
+    Mais uma observação: O Rails usa por padrão o SQLite, entretanto você poderá usar outros bancos como MySQL, PostgreSQL, MongoDB, etc.
+    Não entrarei nos detalhes sobre a instalação de banco de dados para este post não ficar muito longo. Você consegue um tutorial sobre como instalá-los com uma simples pesquisa na web.
+&lt;/p&gt;
+
+&lt;p class=&quot;recuo&quot; align=&quot;justify&quot;&gt;
+    Espero que este post ajude a quem está iniciando no mundo RoR e sirva também para os mais experientes relembrarem os passos iniciais.
+&lt;/p&gt;
+
+&lt;p&gt;*** Ahhh... e não deixe de compartilhar! ;-)&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 Jun 2015 14:55:19 -0300</pubDate>
+        <link>http://aristeuroriz.github.io/ruby-on-rails/2015/06/03/instalar-e-configurar-ambiente-ruby-on-rails-linux/</link>
+        <guid isPermaLink="true">http://aristeuroriz.github.io/ruby-on-rails/2015/06/03/instalar-e-configurar-ambiente-ruby-on-rails-linux/</guid>
+        
+        <category>instalar</category>
+        
+        <category>configurar</category>
+        
+        <category>ambiente</category>
+        
+        <category>ruby on rails</category>
+        
+        
+        <category>ruby-on-rails</category>
+        
+      </item>
     
       <item>
         <title>Bem vindos ao meu Blog!</title>

@@ -11,6 +11,13 @@ html {
 .recuo {
   text-indent: 10%; }
 
+.obs {
+  font-size: 85%; }
+
+code {
+  display: block;
+  overflow-x: scroll; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
