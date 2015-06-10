@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog do aristeu</title>
+    <title>aristeu roriz blog</title>
     <description>Desenvolvimento Web &amp; IoT - Internet of Things</description>
     <link>http://aristeuroriz.github.io/</link>
     <atom:link href="http://aristeuroriz.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 09 Jun 2015 17:11:18 -0300</pubDate>
-    <lastBuildDate>Tue, 09 Jun 2015 17:11:18 -0300</lastBuildDate>
+    <pubDate>Tue, 09 Jun 2015 22:26:04 -0300</pubDate>
+    <lastBuildDate>Tue, 09 Jun 2015 22:26:04 -0300</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
